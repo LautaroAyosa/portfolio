@@ -1,0 +1,31 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 160px;
+    height: 44px;
+    border: solid 2px;
+    border-radius: 20px;
+    color: white;
+    padding: 0px 40px;
+    margin: 10px 20px;
+    font-size: 14px;
+    transition: 0.1s;
+    &:hover {
+        background-color: $secondaryColor;
+        border-color: $secondaryColor;
+        transition: 0.1s;
+    }
+}
+
+.buttonPrimary {
+    @extend .button;
+    background-color: $primaryColor;
+    border-color: $primaryColor
+}
+
+.buttonSecondary {
+    @extend .button;
+    background-color: transparent;
+    border-color: $grey3;
+}

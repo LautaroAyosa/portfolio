@@ -4,33 +4,47 @@ const NavBar = () => {
 
     const NavItems = [
         {
-            title: "Home",
-            url: "/"
-        },
-        {
             title: "About",
             url: "/about"
         },
         {
+            title: "Experience",
+            url: "/experience"
+        },
+        {
             title: "Education",
-            url: "/Education"
+            url: "/education"
         }
     ]
 
     return (
-        <nav style={{display: "flex", backgroundColor: "grey"}}>
-            <ul style={{display: "flex"}}>
-                {NavItems.map((item, i) => {
-                    return (
-                        <li key={i}>
-                            <NavLink 
-                            to={item.url}
-                            className={isActive => "nav-link" + (!isActive ? " unselected" : "")}>
-                                {item.title}
-                            </NavLink>
-                        </li>
-                )})}
-            </ul>
+        <nav>
+            <div>
+                <h4>
+                    <NavLink 
+                    className='navLink' 
+                    to='/'>
+                        Logo
+                    </NavLink>
+                </h4>
+                
+                <ul>
+                    {NavItems.map((item, i) => {
+                        return (
+                            <li key={i}>
+                                <NavLink 
+                                to={item.url}
+                                className={({ isActive }) => isActive ? 'navLink activeClassName' : 'navLink'}>
+                                    {item.title}
+                                </NavLink>
+                            </li>
+                    )})}
+                </ul>
+            </div>
+            <div>
+                <button className="buttonPrimary">Download resume</button>
+                <button className="buttonSecondary">Contact</button>
+            </div>
         </nav>
     )
 }
