@@ -6,6 +6,7 @@
 // Components
 @import "components/forms";
 @import "components/buttons";
+@import "components/containers";
 
 // Core files
 @import "core/root";
@@ -16,3 +17,4 @@
 @import "layout/navigation";
 
 // Pages
+@import "pages/home";

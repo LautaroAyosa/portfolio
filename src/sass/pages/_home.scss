@@ -1,0 +1,122 @@
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+    .mainFirstColumn {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        .mainContent {
+            .title {
+                font-size: 64px;
+            }
+        }
+        .qualificationsContainer {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            .qualification {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: max-content;
+                margin: 0px 30px 0px 0px;
+                h1 {
+                    font-weight: 900;
+                }
+                p {
+                    margin-left: 5px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .mainSecondColumn {
+        background: linear-gradient(223.81deg, rgba(0, 71, 255, 0.2) -2.7%, rgba(84, 210, 202, 0.2) 100.59%);
+        border-radius: 20px;
+        width: 455px;
+        height: 445px;
+        img {
+            height: 530px;
+            margin-top: -85px;
+        }
+    }
+}
+
+.bulletPointsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    h4, p {
+        margin: 0px;
+    }
+    .bulletPointsHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .bulletPointsContent {
+        display: flex;
+        .bulletPoint {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+
+        }
+    }
+}
+
+.experienceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+    .experienceFirstColumn {
+        width: 90%;
+    }
+    .experienceSecondColumn {
+        h4, p {
+            margin: 0px;
+        }
+        .experienceHeader {
+
+        }
+
+        .experienceContent {
+            .experience {
+                display: flex;
+                margin: 20px 0px;
+                .experienceNumber {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 30px;
+                    width: 60px !important;
+                    background-color: black;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    p {
+                        font-weight: 600;
+                        margin-top: 2px;
+                    }
+                }
+                .experienceContentInner {
+                    div {
+                        display: flex;
+                        width: 90%;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}

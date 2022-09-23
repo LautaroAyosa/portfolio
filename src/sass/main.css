@@ -32,12 +32,12 @@ h6 {
   justify-content: center;
   align-items: center;
   min-width: 160px;
+  max-width: 220px;
   height: 44px;
   border: solid 2px;
   border-radius: 20px;
   color: white;
   padding: 0px 40px;
-  margin: 10px 20px;
   font-size: 14px;
   transition: 0.1s;
 }
@@ -58,6 +58,11 @@ h6 {
   border-color: #7A7A7A;
 }
 
+.container {
+  width: 1300px;
+  padding: 130px 0px 60px 0px;
+}
+
 body {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6375) 100%), url("../static/images/deltaBackground.png");
   background-position: center;
@@ -73,16 +78,11 @@ body #root {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   position: absolute;
   background: linear-gradient(164.42deg, rgba(27, 27, 27, 0.51) -0.89%, rgba(0, 0, 0, 0.085) 100.62%);
   backdrop-filter: blur(25px);
-}
-
-body #root .container {
-  display: flex;
-  width: 100%;
 }
 
 .underlineImage {
@@ -137,6 +137,10 @@ nav div ul li:first-child::before {
   content: '';
 }
 
+nav div button {
+  margin: 10px 10px;
+}
+
 .navLink {
   color: white;
   text-decoration: none;
@@ -156,4 +160,131 @@ nav div ul li:first-child::before {
 .activeClassName {
   color: #348cff;
   transform: scale(1.1);
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.mainContainer .mainFirstColumn {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.mainContainer .mainFirstColumn .mainContent .title {
+  font-size: 64px;
+}
+
+.mainContainer .mainFirstColumn .qualificationsContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.mainContainer .mainFirstColumn .qualificationsContainer .qualification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  margin: 0px 30px 0px 0px;
+}
+
+.mainContainer .mainFirstColumn .qualificationsContainer .qualification h1 {
+  font-weight: 900;
+}
+
+.mainContainer .mainFirstColumn .qualificationsContainer .qualification p {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.mainContainer .mainSecondColumn {
+  background: linear-gradient(223.81deg, rgba(0, 71, 255, 0.2) -2.7%, rgba(84, 210, 202, 0.2) 100.59%);
+  border-radius: 20px;
+  width: 455px;
+  height: 445px;
+}
+
+.mainContainer .mainSecondColumn img {
+  height: 530px;
+  margin-top: -85px;
+}
+
+.bulletPointsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.bulletPointsContainer h4, .bulletPointsContainer p {
+  margin: 0px;
+}
+
+.bulletPointsContainer .bulletPointsHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.bulletPointsContainer .bulletPointsContent {
+  display: flex;
+}
+
+.bulletPointsContainer .bulletPointsContent .bulletPoint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.experienceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.experienceContainer .experienceFirstColumn {
+  width: 90%;
+}
+
+.experienceContainer .experienceSecondColumn h4, .experienceContainer .experienceSecondColumn p {
+  margin: 0px;
+}
+
+.experienceContainer .experienceSecondColumn .experienceContent .experience {
+  display: flex;
+  margin: 20px 0px;
+}
+
+.experienceContainer .experienceSecondColumn .experienceContent .experience .experienceNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 60px !important;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.experienceContainer .experienceSecondColumn .experienceContent .experience .experienceNumber p {
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.experienceContainer .experienceSecondColumn .experienceContent .experience .experienceContentInner div {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
 }
