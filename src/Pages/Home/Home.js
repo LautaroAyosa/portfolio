@@ -1,3 +1,5 @@
+import Experiences from "../../Components/Experiences/Experiences"
+
 const Home = () => {
     
     return (
@@ -23,7 +25,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="mainSecondColumn">
-                    <img src={require("../../static/images/me.png")} alt="Me" />
+                    <img src={require('../../images/me.png')} alt="Me" />
                 </div>
             </div>
             <div className="bulletPointsContainer">
@@ -50,43 +52,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="experienceContainer">
-                <div className="experienceFirstColumn">
-                    <img alt="Placeholder"/>
-                </div>
-                <div className="experienceSecondColumn">
-                    <div className="experienceHeader">
-                        <h2>Experience</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
-                    </div>
-                    <div className="experienceContent">
-                        <div className="experience">
-                            <div className="experienceNumber"><p>01</p></div>
-                            <div className="experienceContentInner">
-                                <h4>Co-Founder & CTO</h4>
-                                <div>
-                                    <p>11/2021 - Present</p>
-                                    <p>Bicicleteria All Bike</p>
-                                </div>
-                                <p>Created, updated and maintained the core business website and associated content. Responsible for designing and implementing the commercial strategy and of doing the monthly financial analysis of the company, and more...</p>
-                            </div>
-                            
-                        </div>
-                        <div className="experience">
-                            <div className="experienceNumber"><p>01</p></div>
-                            <div className="experienceContentInner">
-                                <h4>Co-Founder & CTO</h4>
-                                <div>
-                                    <p>11/2021 - Present</p>
-                                    <p>Bicicleteria All Bike</p>
-                                </div>
-                                <p>Created, updated and maintained the core business website and associated content. Responsible for designing and implementing the commercial strategy and of doing the monthly financial analysis of the company, and more...</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+            
+            <Experiences/>
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import Experience from './Experience/Experience'
 
+
 const Experiences = () => {
     
     const experiences = [
@@ -52,10 +53,21 @@ const Experiences = () => {
     ]
     
     return (
-        <div>
-            {experiences.map((experience, i) => {
-                return <Experience key={i} experience={experience} />
-            })}
+        <div className="experienceContainer">
+            <div className="experienceFirstColumn">
+                <img src='/images/greyComputer-experience.jpg' alt="Placeholder"/>
+            </div>
+            <div className="experienceSecondColumn">
+                <div className="experienceHeader">
+                    <h2>Experience</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+                </div>
+                <div className="experienceContent">
+                {experiences.map((experience, i) => {
+                    return <Experience key={i} number={i} experience={experience} />
+                })}
+                </div>
+            </div>
         </div>
     )
 }
