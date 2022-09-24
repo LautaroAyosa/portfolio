@@ -5,6 +5,7 @@ import Education from "./Components/Education/Education";
 import Experiences from './Components/Experiences/Experiences';
 import NavBar from './Components/NavBar/NavBar';
 import Home from "./Pages/Home/Home";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/education" element={<Education />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }
