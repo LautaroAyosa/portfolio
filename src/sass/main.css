@@ -95,12 +95,13 @@ form button {
 }
 
 body {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6375) 100%), url("../images/deltaBackground.png");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6375) 100%), url("../images/deltaBackground-4.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  width: 100vh;
+  height: max-content;
+  width: 100%;
   left: 0px;
   top: 0px;
 }
@@ -112,8 +113,8 @@ body #root {
   min-height: 100%;
   width: 100%;
   position: absolute;
-  background: linear-gradient(164.42deg, rgba(27, 27, 27, 0.51) -0.89%, rgba(0, 0, 0, 0.085) 100.62%);
-  backdrop-filter: blur(25px);
+  background: linear-gradient(164.42deg, rgba(27, 27, 27, 0.51) -0.89%, 100.62%);
+  backdrop-filter: blur(6px);
 }
 
 .underlineImage {
@@ -330,6 +331,13 @@ nav div button {
   height: 445px;
 }
 
+.mainContainer .mainFirstColumn .mainContent img {
+  width: 640px;
+  height: 10px;
+  object-fit: cover;
+  margin: -10px 0px 0px -60px;
+}
+
 .mainContainer .mainFirstColumn .mainContent .title {
   font-size: 64px;
 }
@@ -389,6 +397,20 @@ nav div button {
   margin-bottom: 30px;
 }
 
+.bulletPointsContainer .bulletPointsHeader h2 {
+  margin-bottom: 0px;
+}
+
+.bulletPointsContainer .bulletPointsHeader img {
+  height: 10px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.bulletPointsContainer .bulletPointsHeader p {
+  margin-top: 15px;
+}
+
 .bulletPointsContainer .bulletPointsContent {
   display: flex;
 }
@@ -398,6 +420,37 @@ nav div button {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
+  padding: 0px 20px;
+}
+
+.bulletPointsContainer .bulletPointsContent .bulletPoint img {
+  height: 170px;
+}
+
+.bulletPointsContainer .bulletPointsContent .bulletPoint div {
+  height: 20px;
+  width: 20px;
+  background-color: #0047FF;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  right: 162px;
+}
+
+.bulletPointsContainer .bulletPointsContent .bulletPoint div p {
+  font-weight: 600;
+  font-size: 13px;
+  padding: 1.4px;
+}
+
+.bulletPointsContainer .bulletPointsContent :first-child img, .bulletPointsContainer .bulletPointsContent :last-child img {
+  margin-top: 50px;
+}
+
+.bulletPointsContainer .bulletPointsContent :first-child div, .bulletPointsContainer .bulletPointsContent :last-child div {
+  top: 50px;
 }
 
 .experienceContainer {
@@ -434,7 +487,7 @@ nav div button {
   justify-content: center;
   align-items: center;
   height: 30px;
-  width: 60px !important;
+  min-width: 30px;
   background-color: black;
   border-radius: 50%;
   margin-right: 20px;

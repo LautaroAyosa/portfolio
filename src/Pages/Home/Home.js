@@ -9,7 +9,7 @@ const Home = () => {
                 <div className="mainFirstColumn">
                     <div className="mainContent">
                         <h1 className="title">Lautaro Ayosa</h1>
-                        <img alt="underline placeholder"/>
+                        <img src={require('../../images/underline.png')} alt="underline"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                         <a className="buttonPrimary" href='/#'>Download Resume</a>
                     </div>
@@ -31,22 +31,25 @@ const Home = () => {
             <div className="bulletPointsContainer">
                 <div className="bulletPointsHeader">
                     <h2>I specialize in</h2>
-                    <img alt="underline placeholder"/>
+                    <img src={require('../../images/underline.png')} alt="underline"/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
                 </div>
                 <div className="bulletPointsContent">
                     <div className="bulletPoint">
-                        <img alt="Icon placeholder"/>
+                        <div><p>2</p></div>
+                        <img src={require('../../images/bulletPoint.png')} alt="Icon placeholder"/>
                         <h4>Mobile Development</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                     </div>
                     <div className="bulletPoint">
-                        <img alt="Icon placeholder"/>
+                        <div><p>1</p></div>
+                        <img src={require('../../images/bulletPoint.png')} alt="Icon placeholder"/>
                         <h4>Mobile Development</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                     </div>
                     <div className="bulletPoint">
-                        <img alt="Icon placeholder"/>
+                        <div><p>3</p></div>
+                        <img src={require('../../images/bulletPoint.png')} alt="Icon placeholder"/>
                         <h4>Mobile Development</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                     </div>

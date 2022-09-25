@@ -55,7 +55,7 @@ const Experiences = () => {
     return (
         <div className="experienceContainer">
             <div className="experienceFirstColumn">
-                <img src='/images/greyComputer-experience.jpg' alt="Placeholder"/>
+                <img src={require('../../images/greyComputer-experience.jpg')} alt="Placeholder"/>
             </div>
             <div className="experienceSecondColumn">
                 <div className="experienceHeader">
