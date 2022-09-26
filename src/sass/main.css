@@ -94,26 +94,25 @@ form button {
   padding: 130px 0px 60px 0px;
 }
 
-body {
+html, body {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6375) 100%), url("../images/deltaBackground-4.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 100%;
   height: max-content;
   width: 100%;
   left: 0px;
   top: 0px;
 }
 
-body #root {
+html #root, body #root {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100%;
+  height: 100%;
   width: 100%;
-  position: absolute;
-  background: linear-gradient(164.42deg, rgba(27, 27, 27, 0.51) -0.89%, 100.62%);
+  background: linear-gradient(164.42deg, rgba(27, 27, 27, 0.51) 0%, 100%);
   backdrop-filter: blur(6px);
 }
 

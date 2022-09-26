@@ -39,10 +39,21 @@ const Education = () => {
     ]
     
     return (
-        <div>
-            {education.map((singleEducation, i) => {
-                return <SingleEducation key={i} singleEducation={singleEducation} />
-            })}
+        <div className="experienceContainer"> 
+            <div className="experienceSecondColumn">
+                <div className="experienceHeader">
+                    <h2>Experience</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+                </div>
+                <div className="experienceContent">
+                    {education.map((singleEducation, i) => {
+                        return <SingleEducation key={i} singleEducation={singleEducation} />
+                    })}
+                </div>
+            </div>
+            <div className="experienceFirstColumn">
+                <img src={require('../../images/bookshelves-education.jpg')} alt="Bookshelves"/>
+            </div>
         </div>
     )
 }

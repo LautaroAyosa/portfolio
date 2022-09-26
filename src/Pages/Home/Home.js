@@ -1,3 +1,4 @@
+import Education from "../../Components/Education/Education"
 import Experiences from "../../Components/Experiences/Experiences"
 
 const Home = () => {
@@ -58,6 +59,7 @@ const Home = () => {
             
             
             <Experiences/>
+            <Education />
         </div>
     )
 }
