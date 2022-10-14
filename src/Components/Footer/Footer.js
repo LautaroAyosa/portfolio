@@ -32,9 +32,11 @@ const Footer = () => {
                     </div>
                     <form>
                         <h2>Send a Message</h2>
-                        <input name="name" placeholder="Name" type='text' />
-                        <input name="company" placeholder="Company" type='text' />
-                        <input className="fullRow" name="email" placeholder="Email" type='text' />
+                        <div className="full_row">
+                            <input className="half_row" name="name" placeholder="Name" type='text' />
+                            <input className="half_row" name="company" placeholder="Company" type='text' />
+                        </div>
+                        <input className="full_row" name="email" placeholder="Email" type='text' />
                         <textarea placeholder="Message"/>
                         <button type='submit' className="buttonPrimary">Send Message</button>
                     </form>

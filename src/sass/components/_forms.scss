@@ -17,8 +17,13 @@ form {
         resize: none;
         padding: 20px;
     }
-    .fullRow {
+    .half_row {
+        width: 50%;
+    }
+    .full_row {
+        display: flex;
         width: 100%;
+        flex-wrap: nowrap;
     }
     button {
         margin-top: 5px;
