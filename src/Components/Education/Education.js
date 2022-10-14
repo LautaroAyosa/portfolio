@@ -11,7 +11,7 @@ const Education = () => {
             start_date: "November 2020",
             end_date: "March 2021",
             duration: "5-6 months",
-            description: "",
+            description: "With +700 hours of practice based programming and real proyects. Learnt the following technologies: JS, React, React Native, Node.js, SQL, Typescript, Redux, Express, ES6, CSS, SASS, AJAX, Data Structure and Algorithms.",
             certificate: ""
         },
         {
@@ -22,7 +22,7 @@ const Education = () => {
             start_date: "March 2018",
             end_date: "",
             duration: "",
-            description: "",
+            description: "Mechanical Engineering mixed with Industrial Engineering and a specialization on the Automotive Industry.",
             certificate: ""
         },
         {
@@ -39,19 +39,19 @@ const Education = () => {
     ]
     
     return (
-        <div className="experienceContainer"> 
-            <div className="experienceSecondColumn">
-                <div className="experienceHeader">
-                    <h2>Experience</h2>
+        <div className="two_columns innerContainer"> 
+            <div className="two_columns-body">
+                <div className="two_columns-body-header">
+                    <h2>Education</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
                 </div>
-                <div className="experienceContent">
+                <div className="two_columns-body-content">
                     {education.map((singleEducation, i) => {
-                        return <SingleEducation key={i} singleEducation={singleEducation} />
+                        return <SingleEducation key={i} number={i} singleEducation={singleEducation} />
                     })}
                 </div>
             </div>
-            <div className="experienceFirstColumn">
+            <div className="two_columns-image_right">
                 <img src={require('../../images/bookshelves-education.jpg')} alt="Bookshelves"/>
             </div>
         </div>

@@ -1,0 +1,86 @@
+.two_columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+    .two_columns-image {
+        width:50%;
+        img {
+            height: 600px;
+            width: 450px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: $box-shadow;
+        }
+    }
+    .two_columns-image_right {
+        @extend .two_columns-image;
+        margin-left: 135px;
+    }
+    .two_columns-image_left {
+        @extend .two_columns-image;
+        margin-right: 135px;
+    }
+    .two_columns-body {
+        display: flex;
+        justify-content: space-around;
+        height: 600px;
+        flex-direction: column;
+        h4, p {
+            margin: 0px;
+        }
+        .two_columns-body-header {
+
+        }
+
+        .two_columns-body-content {
+            .item-container {
+                display: flex;
+                margin: 20px 0px;
+                .item-number {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 30px;
+                    min-width: 30px;
+                    background-color: #2E2E2E;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    p {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+                .item {
+                    width: 100%;
+                    div {
+                        display: flex;
+                        width: 90%;
+                        margin: 6px 0px;
+                        justify-content: space-between;
+                    }
+                    .item-institution {
+                        font-size: 14px;
+                        a {
+                            color: white;
+                            transition: .1s;
+                            &:hover {
+                                color: $secondaryColor;
+                                transition: 0.1s;
+                            }
+                        }
+                    }
+                    .item-data {
+                        font-size: 13px;
+                        width: 100%;
+                    }
+                    .item-description {
+                        font-size: 14px;
+                        margin: 12px 0px;
+                    }
+                }
+            }
+        }
+    }
+}

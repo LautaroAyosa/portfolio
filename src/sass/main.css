@@ -27,6 +27,101 @@ h6 {
   font-size: 18px;
 }
 
+.two_columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.two_columns .two_columns-image, .two_columns .two_columns-image_right, .two_columns .two_columns-image_left {
+  width: 50%;
+}
+
+.two_columns .two_columns-image img, .two_columns .two_columns-image_right img, .two_columns .two_columns-image_left img {
+  height: 600px;
+  width: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.two_columns .two_columns-image_right {
+  margin-left: 135px;
+}
+
+.two_columns .two_columns-image_left {
+  margin-right: 135px;
+}
+
+.two_columns .two_columns-body {
+  display: flex;
+  justify-content: space-around;
+  height: 600px;
+  flex-direction: column;
+}
+
+.two_columns .two_columns-body h4, .two_columns .two_columns-body p {
+  margin: 0px;
+}
+
+.two_columns .two_columns-body .two_columns-body-content .item-container {
+  display: flex;
+  margin: 20px 0px;
+}
+
+.two_columns .two_columns-body .two_columns-body-content .item-container .item-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  min-width: 30px;
+  background-color: #2E2E2E;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.two_columns .two_columns-body .two_columns-body-content .item-container .item-number p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.two_columns .two_columns-body .two_columns-body-content .item-container .item {
+  width: 100%;
+}
+
+.two_columns .two_columns-body .two_columns-body-content .item-container .item div {
+  display: flex;
+  width: 90%;
+  margin: 6px 0px;
+  justify-content: space-between;
+}
+
+.two_columns .two_columns-body .two_columns-body-content .item-container .item .item-institution {
+  font-size: 14px;
+}
+
+.two_columns .two_columns-body .two_columns-body-content .item-container .item .item-institution a {
+  color: white;
+  transition: .1s;
+}
+
+.two_columns .two_columns-body .two_columns-body-content .item-container .item .item-institution a:hover {
+  color: #348cff;
+  transition: 0.1s;
+}
+
+.two_columns .two_columns-body .two_columns-body-content .item-container .item .item-data {
+  font-size: 13px;
+  width: 100%;
+}
+
+.two_columns .two_columns-body .two_columns-body-content .item-container .item .item-description {
+  font-size: 14px;
+  margin: 12px 0px;
+}
+
 form {
   display: flex;
   width: 100%;
@@ -49,8 +144,14 @@ form textarea {
   padding: 20px;
 }
 
-form .fullRow {
+form .half_row {
+  width: 50%;
+}
+
+form .full_row {
+  display: flex;
   width: 100%;
+  flex-wrap: nowrap;
 }
 
 form button {
@@ -92,6 +193,10 @@ form button {
 .container {
   width: 1300px;
   padding: 130px 0px 60px 0px;
+}
+
+.container .innerContainer {
+  margin-bottom: 160px;
 }
 
 html, body {
@@ -450,55 +555,4 @@ nav div button {
 
 .bulletPointsContainer .bulletPointsContent :first-child div, .bulletPointsContainer .bulletPointsContent :last-child div {
   top: 50px;
-}
-
-.experienceContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  color: white;
-}
-
-.experienceContainer .experienceFirstColumn {
-  width: 50%;
-}
-
-.experienceContainer .experienceFirstColumn img {
-  height: 600px;
-  width: 450px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.experienceContainer .experienceSecondColumn h4, .experienceContainer .experienceSecondColumn p {
-  margin: 0px;
-}
-
-.experienceContainer .experienceSecondColumn .experienceContent .experience {
-  display: flex;
-  margin: 20px 0px;
-}
-
-.experienceContainer .experienceSecondColumn .experienceContent .experience .experienceNumber {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  min-width: 30px;
-  background-color: black;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-
-.experienceContainer .experienceSecondColumn .experienceContent .experience .experienceNumber p {
-  font-weight: 600;
-  margin-top: 2px;
-}
-
-.experienceContainer .experienceSecondColumn .experienceContent .experience .experienceContentInner div {
-  display: flex;
-  width: 90%;
-  justify-content: space-between;
 }

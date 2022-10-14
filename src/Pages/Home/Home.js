@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div>
 
-            <div className="mainContainer">
+            <div className="mainContainer innerContainer">
                 <div className="mainFirstColumn">
                     <div className="mainContent">
                         <h1 className="title">Lautaro Ayosa</h1>
@@ -29,7 +29,7 @@ const Home = () => {
                     <img src={require('../../images/me.png')} alt="Me" />
                 </div>
             </div>
-            <div className="bulletPointsContainer">
+            <div className="bulletPointsContainer innerContainer">
                 <div className="bulletPointsHeader">
                     <h2>I specialize in</h2>
                     <img src={require('../../images/underline.png')} alt="underline"/>
@@ -56,7 +56,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            
             
             <Experiences/>
             <Education />
